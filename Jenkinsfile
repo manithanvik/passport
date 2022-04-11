@@ -19,7 +19,7 @@ pipeline{
            "files" :[
            {
            "pattern":"target/*.jar",
-           "target":"maven1"
+           "target":"pass3"
            }
            ]
          }''',
