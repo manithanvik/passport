@@ -14,12 +14,12 @@ pipeline{
        stage('Deploy to artifactory'){
         steps{
         rtUpload(
-         serverId : 'jfrog-server',
+         serverId : 'jfrog',
          spec :'''{
            "files" :[
            {
            "pattern":"target/*.jar",
-           "target":"passport"
+           "target":"maven1"
            }
            ]
          }''',
